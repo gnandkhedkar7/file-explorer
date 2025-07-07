@@ -1,3 +1,51 @@
+# 🗂️ React File Explorer
+
+A simple, recursive React-based file explorer UI that lets users create folders and files dynamically.
+
+---
+
+## 🚀 Features
+
+- 📁 Recursive folder/file structure
+- ➕ Add new folders and files anywhere in the tree
+- 👀 Expand/collapse folders
+- 🔄 Uses React hooks and state
+- 💡 Easily extendable with rename, delete, drag-and-drop, etc.
+
+---
+
+## 🛠️ Tech Stack
+
+- React (Functional Components + Hooks)
+- JavaScript
+- CSS
+
+---
+
+## 📂 Folder Structure Example
+
+```json
+{
+  "id": "1",
+  "name": "root",
+  "isFolder": true,
+  "items": [
+    {
+      "id": "2",
+      "name": "public",
+      "isFolder": true,
+      "items": [
+        {
+          "id": "3",
+          "name": "index.html",
+          "isFolder": false,
+          "items": []
+        }
+      ]
+    }
+  ]
+}
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
