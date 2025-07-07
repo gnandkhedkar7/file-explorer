@@ -11,8 +11,11 @@ function insertNode (tree, folderId, item, isFolder){
         });
          return tree;
     }
-
-   
+    let latestNode = [];
+    latestNode = tree.items.map((obj) => {
+        return insertNode(obj, folderId, item, isFolder);;
+    });
+    return {...tree, items: latestNode};
 }
 return {insertNode};
 };

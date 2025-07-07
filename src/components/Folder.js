@@ -52,7 +52,8 @@ function Folder({ explorer, handleInsertNode }) {
             </div>
           )}
           {explorer.items.map((exp) => {
-            return <Folder explorer={exp} key={exp.id} />;
+            return <Folder explorer={exp} key={exp.id}
+            handleInsertNode={handleInsertNode} />;
           })}
         </div>
       </div>
